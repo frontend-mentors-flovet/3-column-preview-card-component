@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+:root {
+  --white: #fff;
+  --text: #ffffffbf;
+  --light-grey: #f2f2f2;
+  --Bright-orange: #e38826;
+  --Dark-cyan: #006970;
+  --Very-dark-cyan: #004241;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--text) !important;
+  scroll-behavior: smooth;
+  background-color: var(--light-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.wrapper {
+  width: 900px;
+  display: flex;
+  height: auto;
+}
+
+.wrapper .sub-1 {
+  background-color: var(--Bright-orange);
+}
+
+.wrapper .sub-2 {
+  background-color: var(--Dark-cyan);
+}
+
+.wrapper .sub-3 {
+  background-color: var(--Very-dark-cyan);
+}
+
+.wrapper .sub {
+  padding: 3rem;
+}
+
+.wrapper .sub img {
+  width: 50px;
+  margin-bottom: 1rem;
+}
+
+.wrapper .sub h1 {
+  font-size: 2em;
+  color: var(--light-grey);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.wrapper .sub p {
+  color: var(--white);
+}
+
+.wrapper .sub button {
+  padding: 0.5rem 1.3rem;
+  margin-top: 5rem;
+  border-radius: 50px;
+  text-transform: capitalize;
+  font-size: 1em;
+  background-color: var(--light-grey);
+  border: 2px solid var(--light-grey);
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.wrapper .sub button:hover {
+  background-color: transparent;
+  color: var(--light-grey);
+  transition-duration: 0.3s;
+}
+
+.wrapper .sub-1 button {
+  color: var(--Bright-orange);
+}
+
+.wrapper .sub-2 button {
+  color: var(--Dark-cyan);
+}
+
+.wrapper .sub-3 button {
+  color: var(--Very-dark-cyan);
+}
+
+/* for tablet sized screens  */
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    max-width: 90vw;
+  }
+  .wrapper .sub {
+    padding: 2rem;
+  }
+}
+
+/* for mobile screens  */
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+    height: auto;
+    padding: 2rem 0;
+  }
+  .wrapper {
+    max-width: 90vw;
+    flex-direction: column;
+  }
+
+  .wrapper .sub button {
+    margin-top: 3rem;
+  }
+}
